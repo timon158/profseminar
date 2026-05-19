@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 k = int(input('Введите длину марковской цепи: '))
 
 
-path_dataset = '/Users/timaf/Домашка/Проект питон/training.1600000.processed.noemoticon.csv'
+path_dataset = ''
 
 
 def count_words(message: str, data_dict: dict):
@@ -83,7 +83,7 @@ except FileNotFoundError:
     data_dict = make_data_dict(path_dataset, k)
 
 
-question = input('Введите свой вопрос: ').lower() # wassup homies
+question = input('Введите свой вопрос: ').lower()
 question = tuple(question.split())
 
 M = int(input('Введите желаемую длину ответа: '))
